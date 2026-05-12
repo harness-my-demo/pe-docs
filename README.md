@@ -17,8 +17,9 @@ The lab runs end-to-end on a single-node kind cluster against a real Harness acc
 | [`01-developer-flow.md`](01-developer-flow.md) | Six end-user scenarios from a domain developer's perspective. Useful for onboarding new domain engineers and for walking a reviewer through the platform. |
 | [`02-architecture.md`](02-architecture.md) | Comprehensive system architecture: tenant topology, repo map, cluster layout, supply-chain flow, CD flow, canary mechanism, config resolution, policy enforcement, decisions log, failure-mode catalogue, operational walkthrough. |
 | [`03-runbook.md`](03-runbook.md) | Step-by-step reproduction: from empty Harness account to live BWR pipelines. Each step has commands, expected output, and a checkbox. |
+| [`04-lessons-learned.md`](04-lessons-learned.md) | Lessons from the build, the core "templates as a product" operational problem, and the proposed template SDLC: test pipeline (lint → golden-file diff → integration test → OPA evaluation) and Terraform-managed promotion with semver versioning. Roadmap for the next four quarters. |
 
-**Suggested reading order:** `01` → `02` → `03`. The developer-flow doc primes the platform narrative; the architecture doc backs every claim with a diagram; the runbook reproduces the setup.
+**Suggested reading order:** `01` → `02` → `03` → `04`. The developer-flow doc primes the platform narrative; the architecture doc backs every claim with a diagram; the runbook reproduces the setup; the lessons-learned doc covers the gap to a production-grade rollout.
 
 ---
 
